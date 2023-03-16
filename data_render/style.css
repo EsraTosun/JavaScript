@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body , #root
+{
+    background-color: rgb(245,245,245);
+    height: 100%;
+    width: 100%;
+}
+
+.person
+{
+    background-color: rgb(255,255,255);
+    flex-direction: column; /* alt alta yapar */
+    border-radius: 20px;
+    user-select: none;  /* yazıyı seçilebilir özelliğini kapattık */
+    display: flex;
+    padding: 10px; /* kendi içinde boşluk */
+    margin: 10px; /* diğerleri ile arasındaki boşlu */
+}
+
+.person > .title
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 4px; /* altına boşluk verir */
+    font-size: 14px;
+}
+
+.person >.job
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.person:hover  /* üzerine geldiğinde ne olacağı */
+{
+    cursor: pointer;  /* imlec değiştir */
+    opacity: 0.5; /* opaklık ver */
+} 
+
+.person:active  /* tıklandığında ne olacağı */
+{
+    transform: translateY(2px);  /* kuyuyu aşağı doğru hareket ettiri */
+}
